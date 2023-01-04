@@ -1,23 +1,51 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import tempcoverLogo from "../images/logos/tempcover.jpg";
+import avmiLogo from "../images/logos/avmi.jpg";
+import novemberFiveLogo from "../images/logos/novemberfive.jpg";
+import civicaLogo from "../images/logos/civica.jpg";
 ---
 
 <Layout title="Joshua Grant">
-  <main>
+  <main class="py-4 px-3 md:p-8">
     <!-- Intro secion -->
-    <section>
-      <h3 class="font-open-sans">Hey there I'm Josh &#128075;</h3>
+    <section id="intro">
+      <h4 class="text-white text-xl font-open-sans">
+        Hey there I'm Josh &#128075;
+      </h4>
     </section>
     <!-- About me -->
-    <section></section>
-    <!-- Skills -->
-    <section></section>
-    <!-- Projects -->
-    <section></section>
+    <section id="about">
+      <h4 class="text-white text-xl font-open-sans">About me</h4>
+      <h5 class="text-white text-lg font-open-sans">My skills</h5>
+    </section>
     <!-- Work experience -->
-    <section></section>
+    <section id="work">
+      <h4 class="text-white text-xl font-open-sans">
+        Companies I'm proud to say that I've collaborated with:
+      </h4>
+      <div class="justify-center grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div><img src={tempcoverLogo} width="150" alt="Tempcover logo" /></div>
+        <div>
+          <img src={novemberFiveLogo} width="150" alt="November Five logo" />
+        </div>
+        <div>
+          <img src={avmiLogo} width="150" alt="AVMI logo" />
+        </div>
+        <div>
+          <img src={civicaLogo} width="150" alt="Civica logo" />
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="portfolio">
+      <h4 class="text-white text-xl font-open-sans">
+        Here's some things I've worked on
+      </h4>
+    </section>
     <!-- Contact form -->
-    <section></section>
+    <section id="contact">
+      <h4 class="text-white text-xl font-open-sans">Contact</h4>
+    </section>
   </main>
 </Layout>
