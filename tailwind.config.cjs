@@ -4,15 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        josh: {
-          blue: {
-            100: "#31446B",
-            200: "#14142D",
-          },
-          sage: "#4D8A95",
-          beige: "#D0CDB3",
-          orange: "#DFB64C",
-        },
+        'dark-blue': '#31446B',
+        'floral-white': '#FFF8F0',
+        'dark-red': '#92140C',
+        'deep-champagne': '#FFCF99',
+        'emerald': '#0CCE6B'
       },
       fontFamily: {
         "open-sans": ['"Open Sans"'],
