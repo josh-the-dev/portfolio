@@ -1,0 +1,25 @@
+---
+export interface Props {
+  name: string;
+  body: string;
+  img: {
+    url: string;
+    alt: string;
+  };
+}
+
+const { name, img, body } = Astro.props;
+---
+
+<div class="bg-white rounded-md p-4 w-full flex flex-col">
+  <img
+    src={img.url}
+    alt={img.alt}
+    class="self-center rounded-md"
+    width="150"
+    height="150"
+  />
+  <h5>{name}</h5><p>
+    {body}
+  </p>
+</div>
