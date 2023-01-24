@@ -1,86 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import tempcoverLogo from "../assets/images/logos/tempcover.jpg";
-import avmiLogo from "../assets/images/logos/avmi.jpg";
-import novemberFiveLogo from "../assets/images/logos/novemberfive.jpg";
-import civicaLogo from "../assets/images/logos/civica.jpg";
 import Project from "../components/Project.astro";
 ---
 
 <Layout title="Joshua Grant">
-  <main class="py-4 px-3 md:p-8">
-    <!-- Intro secion -->
+  <main
+    class="max-w-7xl w-full mx-auto px-4 sm:px-12 pb-16 pt-12 sm:pt-24 lg:py-32 xl:pt-48 text-gray-800 min-h-screen"
+  >
+    <!-- Intro section -->
     <section id="intro">
-      <h4 class="text-floral-white text-xl font-open-sans">
-        Hey there I'm Josh &#128075;
-      </h4>
+      <h2 class="text-floral-white text-5xl font-open-sans mb-4">
+        Hi, I'm Josh &#128075;
+      </h2>
+      <p class="text-floral-white text-xl font-open-sans">
+        I'm a senior software engineer originally from England, now based in
+        Antwerp.
+      </p>
+      <p class="text-floral-white text-xl font-open-sans">
+        I use code to solve problems, where my biggest passion comes from making
+        top quality, responsive websites / apps.
+      </p>
+    </section>
+    <!-- WORK IN PROGRESS AREA -->
+    <section id="wip">
+      <h1 class="text-floral-white text-7xl font-open-sans my-12">
+        This site is currently under construction!
+      </h1>
     </section>
     <!-- About me -->
-    <section id="about">
-      <h4 class="text-floral-white text-xl font-open-sans">About me</h4>
-      <h5 class="text-floral-white text-lg font-open-sans">My skills</h5>
-      <!-- TODO enhance this area to make it look nicer -->
-      <h6>Languages</h6>
-      <ul>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>TypeScript</li>
-        <li>C#</li>
-      </ul>
-      <h6>Technologies</h6>
-      <ul>
-        <li>React</li>
-        <li>Next</li>
-        <li>Remix</li>
-        <li>Redux</li>
-        <li>React Native</li>
-        <li>Tailwind</li>
-        <li>Astro</li>
-        <li>.Net 6</li>
-        <li>Git</li>
-        <li>Docker</li>
-        <li>SQL</li>
-        <li>Entity Framework</li>
-      </ul>
-      <h6>Technical concepts</h6>
-      <ul>
-        <li>Agile methodologies (incl. SCRUM)</li>
-        <li>Monorepos</li>
-        <li>Unit Testing</li>
-        <li>DevOps (pipelines, CI/CD)</li>
-        <li>Microservices</li>
-      </ul>
-      <h6>Soft skills</h6>
-      <ul>
-        <li>Passionate</li>
-        <li>Communication</li>
-        <li>Collaboration</li>
-        <li>Team leadership</li>
-        <li>Approachability</li>
-        <li>Mentoring</li>
-      </ul>
-    </section>
-    <!-- Work experience -->
-    <section id="work">
-      <h4 class="text-floral-white text-xl font-open-sans">
-        Companies I'm proud to say that I've collaborated with:
-      </h4>
-      <div class="justify-center grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div><img src={tempcoverLogo} width="150" alt="Tempcover logo" /></div>
-        <div>
-          <img src={novemberFiveLogo} width="150" alt="November Five logo" />
-        </div>
-        <div>
-          <img src={avmiLogo} width="150" alt="AVMI logo" />
-        </div>
-        <div>
-          <img src={civicaLogo} width="150" alt="Civica logo" />
-        </div>
-      </div>
-    </section>
+    <section id="about"></section>
     <!-- Projects -->
-    <section id="portfolio">
+    <!-- <section id="projects">
       <h4 class="text-floral-white text-xl font-open-sans">
         Here's some things I've worked on
       </h4>
@@ -101,42 +51,41 @@ import Project from "../components/Project.astro";
           name="Project 2"
           body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptas et mollitia unde perspiciatis possimus dolorum, tempore corrupti, ab quisquam quidem nisi cum veritatis. Commodi minus nesciunt accusantium perspiciatis iusto?"
         />
-      </div>
+      </div> -->
 
-      <!-- Contact form -->
-      <section id="contact">
-        <h4 class="text-floral-white text-xl font-open-sans">Contact</h4>
-        <div>
-          <p class="text-floral-white font-open-sans">
-            Feel free to reach out to me through any platform below:
-          </p>
-          <ul>
+    <!-- Contact form -->
+    <section id="contact">
+      <h4 class="text-floral-white text-xl font-open-sans">Contact</h4>
+      <div>
+        <p class="text-floral-white font-open-sans">
+          Feel free to reach out to me through any platform below:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="mailto:grantjoshua1995@gmail.com"
+              class="text-floral-white hover:font-bold font-open-sans"
+              >grantjoshua@gmail.com</a
+            >
             <li>
               <a
-                href="mailto:grantjoshua1995@gmail.com"
+                href="https://www.linkedin.com/in/joshua-h-grant/"
+                target="_blank"
                 class="text-floral-white hover:font-bold font-open-sans"
-                >grantjoshua@gmail.com</a
+                >LinkedIn</a
               >
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/joshua-h-grant/"
-                  target="_blank"
-                  class="text-floral-white hover:font-bold font-open-sans"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/_JoshGrant_"
-                  target="_blank"
-                  class="text-floral-white hover:font-bold font-open-sans"
-                  >Twitter</a
-                >
-              </li>
             </li>
-          </ul>
-        </div>
-      </section>
+            <li>
+              <a
+                href="https://twitter.com/_JoshGrant_"
+                target="_blank"
+                class="text-floral-white hover:font-bold font-open-sans"
+                >Twitter</a
+              >
+            </li>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </Layout>
