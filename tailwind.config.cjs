@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-blue': '#31446B',
-        'floral-white': '#FFF8F0',
+        "dark-blue": "#081b29",
+        "blue-green": "#007577",
+        "blue-green-60": "#00757760",
       },
       fontFamily: {
         "open-sans": ['"Open Sans"'],

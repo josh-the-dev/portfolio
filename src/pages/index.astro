@@ -5,27 +5,21 @@ import Project from "../components/Project.astro";
 
 <Layout title="Joshua Grant">
   <main
-    class="sm:max-w-7xl w-full mx-auto px-4 sm:px-12 py-20 sm:pt-24 lg:py-32 xl:pt-48 min-h-screen"
+    class="sm:max-w-4xl w-full mx-auto px-4 sm:px-12 py-20 sm:pt-24 lg:py-32 xl:pt-48 min-h-screen"
   >
     <!-- Intro section -->
-    <section id="intro">
-      <h2 class="text-floral-white text-5xl font-open-sans mb-4">
+    <section id="intro" class="h-3/4">
+      <h2 class="text-white text-5xl font-open-sans mb-4">
         Hi, I'm Josh &#128075;
       </h2>
-      <p class="text-floral-white text-xl font-open-sans">
+      <p class="text-white text-xl font-open-sans">
         I'm a senior software engineer originally from England, now based in
         Antwerp.
       </p>
-      <p class="text-floral-white text-xl font-open-sans">
+      <p class="text-white text-xl font-open-sans">
         I use code to solve problems, where my biggest passion comes from making
         top quality, responsive websites / apps.
       </p>
-    </section>
-    <!-- WORK IN PROGRESS AREA -->
-    <section id="wip">
-      <h1 class="text-floral-white text-4xl font-open-sans my-12">
-        This site is currently under construction! So check back soon!
-      </h1>
     </section>
     <!-- About me -->
     <section id="about"></section>
@@ -51,41 +45,44 @@ import Project from "../components/Project.astro";
           name="Project 2"
           body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptas et mollitia unde perspiciatis possimus dolorum, tempore corrupti, ab quisquam quidem nisi cum veritatis. Commodi minus nesciunt accusantium perspiciatis iusto?"
         />
-      </div> -->
-
+      </div>
+    </section> -->
     <!-- Contact form -->
-    <!-- <section id="contact">
-      <h4 class="text-floral-white text-xl font-open-sans">Contact</h4>
+    <section id="contact">
+      <h4 class="text-white text-xl font-open-sans">Contact</h4>
       <div>
-        <p class="text-floral-white font-open-sans">
+        <p class="text-white font-open-sans">
           Feel free to reach out to me through any platform below:
         </p>
         <ul>
           <li>
+            <i class="fa fa-envelope"></i>
             <a
               href="mailto:grantjoshua1995@gmail.com"
-              class="text-floral-white text-xl hover:font-bold font-open-sans p-8"
-              >grantjoshua@gmail.com</a
+              class="text-white text-xl hover:font-bold font-open-sans"
+              >grantjoshua1995@gmail.com</a
             >
-            <li>
-              <a
-                href="https://www.linkedin.com/in/joshua-h-grant/"
-                target="_blank"
-                class="text-floral-white text-xl hover:font-bold font-open-sans"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/_JoshGrant_"
-                target="_blank"
-                class="text-floral-white text-xl hover:font-bold font-open-sans"
-                >Twitter</a
-              >
-            </li>
+          </li>
+          <li>
+            <i class="fa fa-linkedin-square"></i>
+            <a
+              href="https://www.linkedin.com/in/joshua-h-grant/"
+              target="_blank"
+              class="text-white text-xl hover:font-bold font-open-sans"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <i class="fa fa-twitter"></i>
+            <a
+              href="https://twitter.com/_JoshGrant_"
+              target="_blank"
+              class="text-white text-xl hover:font-bold font-open-sans"
+              >Twitter</a
+            >
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
 </Layout>
